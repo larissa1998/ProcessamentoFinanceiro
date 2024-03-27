@@ -9,9 +9,9 @@
   1. Clonar Repositório
   2. Navegar para o diretório do projeto
   3. Executar o aplicativo localmente
-    ```
-    dotnet run --project ProcessamentoFinanceiro
-    ```
+      ```
+      dotnet run --project ProcessamentoFinanceiro
+      ```
   5. Executar os testes unitários
      ```
      dotnet test
@@ -20,9 +20,9 @@
 ## Como usar o docker (opcional)
   1. Construir a imagem Docker
      ```
-     docker build -t financial-processing
+     docker build -t ProcessamentoFinanceiro
      ```
   2. Executar o contêiner Docker
      ```
-     docker run -d -p 8888:8888 financial-processing
+     docker run -d -p 8888:8888 ProcessamentoFinanceiro
      ```
