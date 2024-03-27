@@ -10,7 +10,7 @@
   2. Navegar para o diretório do projeto
   3. Executar o aplicativo localmente
     ```
-    dotnet run --project FinancialProcessing
+    dotnet run --project ProcessamentoFinanceiro
     ```
   5. Executar os testes unitários
      ```
