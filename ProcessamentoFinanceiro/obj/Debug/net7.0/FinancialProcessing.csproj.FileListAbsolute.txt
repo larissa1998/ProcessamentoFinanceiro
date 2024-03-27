@@ -1,0 +1,5 @@
+C:\Users\Larissa\source\repos\ProcessamentoFinanceiro\ProcessamentoFinanceiro\obj\Debug\net7.0\FinancialProcessing.csproj.AssemblyReference.cache
+C:\Users\Larissa\source\repos\ProcessamentoFinanceiro\ProcessamentoFinanceiro\obj\Debug\net7.0\FinancialProcessing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Larissa\source\repos\ProcessamentoFinanceiro\ProcessamentoFinanceiro\obj\Debug\net7.0\FinancialProcessing.AssemblyInfoInputs.cache
+C:\Users\Larissa\source\repos\ProcessamentoFinanceiro\ProcessamentoFinanceiro\obj\Debug\net7.0\FinancialProcessing.AssemblyInfo.cs
+C:\Users\Larissa\source\repos\ProcessamentoFinanceiro\ProcessamentoFinanceiro\obj\Debug\net7.0\FinancialProcessing.csproj.CoreCompileInputs.cache

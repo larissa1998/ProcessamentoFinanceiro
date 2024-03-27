@@ -1,0 +1,58 @@
+[
+  {
+    "Timestamp": "2024-03-29T09:00:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 130.50,
+    "ClosePrice": 131.25,
+    "Volume": 10000
+  },
+  {
+    "Timestamp": "2024-03-29T09:01:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 131.25,
+    "ClosePrice": 132.00,
+    "Volume": 12000
+  },
+  {
+    "Timestamp": "2024-03-29T09:02:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 132.00,
+    "ClosePrice": 131.75,
+    "Volume": 11000
+  },
+  {
+    "Timestamp": "2024-03-29T09:03:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 131.75,
+    "ClosePrice": 131.50,
+    "Volume": 10500
+  },
+  {
+    "Timestamp": "2024-03-29T09:04:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 131.50,
+    "ClosePrice": 131.25,
+    "Volume": 9500
+  },
+  {
+    "Timestamp": "2024-03-29T09:05:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 131.25,
+    "ClosePrice": 131.00,
+    "Volume": 9700
+  },
+  {
+    "Timestamp": "2024-03-29T09:06:00",
+    "Interval": "1m",
+    "StockSymbol": "AAPL",
+    "OpenPrice": 131.00,
+    "ClosePrice": 130.75,
+    "Volume": 10500
+  }
+]
