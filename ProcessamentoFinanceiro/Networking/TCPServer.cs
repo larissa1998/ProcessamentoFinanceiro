@@ -32,7 +32,7 @@ namespace FinancialProcessing.Networking
                 TcpClient client = await _listener.AcceptTcpClientAsync();
                 Console.WriteLine("Cliente conectado.");
 
-                Task.Run(() => HandleClientAsync(client));
+                await Task.Run(() => HandleClientAsync(client));
             }
         }
 
