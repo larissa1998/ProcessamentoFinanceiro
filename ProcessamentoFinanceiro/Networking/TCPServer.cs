@@ -2,7 +2,6 @@
 using FinancialProcessing.Processing;
 using FinancialProcessing.Serialization;
 using System.Net.Sockets;
-using System.Net;
 using System.Text;
 using Newtonsoft.Json;
 
@@ -17,7 +16,7 @@ namespace FinancialProcessing.Networking
 
         public TCPServer()
         {
-            _listener = new TcpListener(IPAddress.Any, Port);
+            _listener = new TcpListener(System.Net.IPAddress.Any, Port);
             _dataProcessor = new MarketDataProcessor();
             _dataSerializer = new MarketDataSerializer();
         }
@@ -44,15 +43,20 @@ namespace FinancialProcessing.Networking
             {
                 try
                 {
-                    string jsonData = File.ReadAllText("market_data.json");
-                    Console.WriteLine($"Dados lidos do arquivo: {jsonData}");
+                    StringBuilder sb = new StringBuilder();
+                    string line;
+                    while ((line = await reader.ReadLineAsync()) != null)
+                    {
+                        sb.AppendLine(line);
+                    }
+                    string jsonData = sb.ToString();
 
-                    MarketData[] marketDataArray = JsonConvert.DeserializeObject<MarketData[]>(jsonData);
+                    Console.WriteLine($"Dados recebidos do cliente: {jsonData}");
 
-                    ProcessedMarketData processedData = await _dataProcessor.ProcessMarketDataAsync(marketDataArray);
+                    MarketData marketData = JsonConvert.DeserializeObject<MarketData>(jsonData);
+                    ProcessedMarketData processedData = await _dataProcessor.ProcessMarketDataAsync(marketData);
 
                     string processedJsonData = _dataSerializer.SerializeProcessedData(processedData);
-
                     await writer.WriteLineAsync(processedJsonData);
                     await writer.FlushAsync();
                     Console.WriteLine("Dados processados enviados ao cliente.");
